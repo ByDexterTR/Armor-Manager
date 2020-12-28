@@ -7,7 +7,7 @@
 • sm_armor <#userid|name> [amount(0-100)]
 ○ Change the target's armor
 
-• sm_helmet | sm_kevlar <#userid|name> [amount(0-100)]
+• sm_helmet | sm_kevlar <#userid|name> [amount(0-1)]
 ○ Gives or takes the target's helmet
 
 • sm_resetarmor <#userid|name>
