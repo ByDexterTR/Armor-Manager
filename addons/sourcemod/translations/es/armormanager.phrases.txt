@@ -1,0 +1,26 @@
+"Phrases"
+{
+	"Set armor on target"
+	{
+		"#format"		"{1:t},{2:d}"
+		"es"			"La armadura de {1} ha sido cambiada a {2}."
+	}
+	
+	"Remove armor on target"
+	{
+		"#format"		"{1:t}"
+		"es"			"La armadura y casco de {1} ha sido removida."
+	}
+	
+	"Set helmet on target"
+	{
+		"#format"		"{1:t}"
+		"es"			"Se entregó un casco a {1}."
+	}
+	
+	"Set helmet on target"
+	{
+		"#format"		"{1:t}"
+		"es"			"El casco de {1} ha sido removido."
+	}
+}
