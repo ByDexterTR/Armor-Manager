@@ -1,0 +1,22 @@
+"Phrases"
+{
+	"Set armor on target"
+	{
+		"tr"			"{1}'in zırhı {2} olarak değiştirildi."
+	}
+	
+	"Remove armor on target"
+	{
+		"tr"			"{1}'ın zırhı ve kaskı çıkarıldı."
+	}
+	
+	"Set helmet on target"
+	{
+		"tr"			"{1} kask verildi."
+	}
+	
+	"Set helmet off target"
+	{
+		"tr"			"{1} kaskı çıkarıldı."
+	}
+}

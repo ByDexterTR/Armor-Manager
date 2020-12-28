@@ -1,0 +1,26 @@
+"Phrases"
+{
+	"Set armor on target"
+	{
+		"#format"		"{1:t},{2:d}"
+		"en"			"{1}'s armor has been changed to {2}."
+	}
+	
+	"Remove armor on target"
+	{
+		"#format"		"{1:t}"
+		"en"			"{1}'s armor and helmet have been removed."
+	}
+	
+	"Set helmet on target"
+	{
+		"#format"		"{1:t}"
+		"en"			"{1} helmet was given."
+	}
+	
+	"Set helmet on target"
+	{
+		"#format"		"{1:t}"
+		"en"			"{1} helmet was removed."
+	}
+}
