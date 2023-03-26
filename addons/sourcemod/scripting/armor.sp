@@ -8,7 +8,7 @@ public Plugin myinfo =
 	name = "Armor Manager", 
 	author = "ByDexter", 
 	description = "Armor Manager", 
-	version = "1.0", 
+	version = "1.1", 
 	url = "https://steamcommunity.com/id/ByDexterTR - ByDexter#5494"
 };
 
@@ -48,8 +48,7 @@ public Action Command_Armor(int client, int args)
 		{
 			amount = 0;
 		}
-		
-		if (amount > 100)
+		else if (amount > 100)
 		{
 			amount = 100;
 		}
@@ -116,8 +115,7 @@ public Action Command_Helmet(int client, int args)
 		{
 			amount = 0;
 		}
-		
-		if (amount > 1)
+		else if (amount > 1)
 		{
 			amount = 1;
 		}
@@ -157,8 +155,7 @@ public Action Command_Helmet(int client, int args)
 			ShowActivity2(client, "[SM] ", "%t", "Set helmet on target", "_s", target_name);
 		}
 	}
-	
-	if (amount == 0)
+	else
 	{
 		if (tn_is_ml)
 		{
@@ -202,11 +199,13 @@ public Action Command_ResetArmor(int client, int args)
 		return Plugin_Handled;
 	}
 	
+	EngineVersion ev = GetEngineVersion();
+	
 	for (int i = 0; i < target_count; i++)
 	{
 		SetEntProp(target_list[i], Prop_Send, "m_bHasHelmet", 0);
 		SetEntProp(target_list[i], Prop_Send, "m_ArmorValue", 0, 0);
-		if (GetEngineVersion() == Engine_CSGO)
+		if (ev == Engine_CSGO)
 		{
 			SetEntProp(target_list[i], Prop_Send, "m_bHasHeavyArmor", 0);
 			SetEntProp(target_list[i], Prop_Send, "m_bWearingSuit", 0);
